@@ -47,7 +47,7 @@ export default function QuoteForm({ onSuccess }) {
 
   async function onSubmit(data) {
     try {
-      await axios.post('/api/quote', data)
+      await axios.post('/api/quotes', data)
     } catch {
       setError('root', { message: c.errorMessage })
       throw new Error('submission failed')
@@ -179,34 +179,34 @@ export default function QuoteForm({ onSuccess }) {
               {/* Organization */}
               <div>
                 <label className={LABEL_CLASS} htmlFor="qf-company">
-                  {c.fields.company.label}
+                  {c.fields.organization.label}
                 </label>
                 <input
                   id="qf-company"
                   type="text"
-                  placeholder={c.fields.company.placeholder}
+                  placeholder={c.fields.organization.placeholder}
                   className={FIELD_CLASS}
-                  {...register('company')}
+                  {...register('organization')}
                 />
               </div>
 
               {/* Project Type */}
               <div>
                 <label className={LABEL_CLASS} htmlFor="qf-service">
-                  {c.fields.service.label} <span style={{ color: 'var(--color-primary)' }}>*</span>
+                  {c.fields.projectType.label} <span style={{ color: 'var(--color-primary)' }}>*</span>
                 </label>
                 <select
                   id="qf-service"
                   className={FIELD_CLASS}
-                  {...register('service', { required: 'Please select a project type' })}
+                  {...register('projectType', { required: 'Please select a project type' })}
                 >
                   <option value="">Select a solution area...</option>
-                  {c.fields.service.options.map((opt) => (
+                  {c.fields.projectType.options.map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>
-                {errors.service && (
-                  <p className={ERROR_CLASS}><AlertCircle size={12} /> {errors.service.message}</p>
+                {errors.projectType && (
+                  <p className={ERROR_CLASS}><AlertCircle size={12} /> {errors.projectType.message}</p>
                 )}
               </div>
 

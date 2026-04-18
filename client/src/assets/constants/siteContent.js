@@ -116,8 +116,8 @@ export const quoteFormContent = {
   fields: {
     name:     { label: 'Full Name',     placeholder: 'Jane Smith' },
     email:    { label: 'Email Address', placeholder: 'jane@company.com' },
-    company:  { label: 'Organization',  placeholder: 'Your company or organization name' },
-    service:  { label: 'Project Type',  options: ['Workforce Consulting', 'Digital Solutions', 'Both'] },
+    projectType: { label: 'Service needed', options: ['Workforce Consulting', 'Digital Solutions', 'Both'] },
+    organization: { label: 'Company', placeholder: 'Your company name (optional)' },
     message:  { label: 'Message',       placeholder: "Tell us about your current challenges, goals, or what you'd like to accomplish..." },
   },
   submitLabel: 'Send My Request →',
