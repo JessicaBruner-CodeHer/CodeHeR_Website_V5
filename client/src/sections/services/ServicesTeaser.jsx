@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Users, Monitor, ArrowRight } from 'lucide-react'
+import { Users, Monitor } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { servicesTeaserContent as c } from '@/assets/constants/siteContent'
 import SectionHeading from '@/ui/sectionheading/SectionHeading'
@@ -23,13 +23,10 @@ export default function ServicesTeaser() {
     >
       <div className="site-container">
 
-        <SectionHeading
-          eyebrow={c.eyebrow}
-          headline={c.headline}
-          subtext={c.subtext}
-          align="center"
-          className="max-w-2xl"
-        />
+        <h2 className="font-heading text-4xl md:text-5xl font-semibold leading-tight mb-16">
+          <span style={{ color: '#1c1410', textShadow: '2px 2px 0px #c9973a' }}>Our</span>{' '}
+          <span style={{ color: '#c9973a', textShadow: '2px 2px 0px #1c1410' }}>Solutions</span>
+        </h2>
 
         <div
           style={{ marginTop: '4rem', gap: '2.5rem' }}
@@ -45,7 +42,7 @@ export default function ServicesTeaser() {
                 whileInView="visible"
                 viewport={{ once: true, margin: '-60px' }}
                 variants={cardVariants}
-                style={{ padding: '3rem', gap: '2rem', display: 'flex', flexDirection: 'column' }}
+                style={{ padding: '3rem', gap: '2rem', display: 'flex', flexDirection: 'column', borderLeft: '4px solid #B85C38' }}
                 className="
                   group
                   bg-[var(--color-surface-cream)]
@@ -59,14 +56,11 @@ export default function ServicesTeaser() {
                 "
               >
                 {/* Icon */}
-                <div className="
-                  w-14 h-14 rounded-[var(--radius-md)]
-                  bg-[var(--color-primary)]/10
-                  flex items-center justify-center
-                  text-[var(--color-primary)]
-                  shrink-0
-                ">
-                  {Icon && <Icon size={26} strokeWidth={1.5} />}
+                <div
+                  className="hex-icon w-16 h-16 bg-[var(--color-primary)]/15 flex items-center justify-center text-[var(--color-primary)] shrink-0"
+                  style={{ filter: 'drop-shadow(4px 4px 0px #B85C38)' }}
+                >
+                  {Icon && <Icon size={24} strokeWidth={1.5} />}
                 </div>
 
                 {/* Label + tagline */}
@@ -93,7 +87,9 @@ export default function ServicesTeaser() {
                   "
                 >
                   {service.cta.label}
-                  <ArrowRight size={15} />
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+                    <polygon points="7,0 14,3.5 14,10.5 7,14 0,10.5 0,3.5" />
+                  </svg>
                 </Link>
               </motion.div>
             )

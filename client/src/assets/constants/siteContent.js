@@ -11,7 +11,7 @@ export const navbarContent = {
     { label: 'Business Solutions', href: '/services/workforce' },
     { label: 'Digital Solutions', href: '/services/digital' },
   ],
-  ctaLabel: 'Get a Quote',
+  ctaLabel: 'Get Started',
 }
 
 // ── Hero ─────────────────────────────────────────────────────
@@ -20,7 +20,7 @@ export const heroContent = {
   eyebrow:    'Workforce Consulting · Web Development',
   headline:   'Your Business.\nOur Solutions.',
   subheadline: 'Where workforce strategy meets economic impact.',
-  primaryCta:   { label: 'Get a Quote',        href: null },        // opens modal
+  primaryCta:   { label: 'Get Started',        href: null },        // opens modal
   secondaryCta: { label: 'See Our Services',   href: '#services' },
 }
 
@@ -35,7 +35,7 @@ export const servicesTeaserContent = {
       icon:        'Users',
       label:       'Business Consulting',
       tagline:     'Building bridges between people and policies.',
-      description: 'Identifying workforce gaps through policies, systems, and processes. We build sustainable workforce programs that connect the right people to the right opportunities — and keep them there.',
+      description: 'Identifying workforce gaps through policies, systems, and processes. We build sustainable workforce programs that connect the right people to the right opportunities and keep them there.',
       cta:         { label: 'Learn more', href: '/services/workforce' },
     },
     {
@@ -51,7 +51,7 @@ export const servicesTeaserContent = {
 
 // ── Mission / Impact Block ───────────────────────────────────
 export const missionContent = {
-  eyebrow:   'Why CodeHeR',
+  eyebrow:   'Why CodeHe{R} LLC',
   statement: 'Strategic thinking. Practical execution. Meaningful change.',
   pillars: [
     {
@@ -74,7 +74,7 @@ export const missionContent = {
 
 // ── About Teaser (landing) ───────────────────────────────────
 export const aboutTeaserContent = {
-  eyebrow:  'About CodeHeR',
+  eyebrow:  'About CodeHe{R} LLC',
   headline: 'Built at the intersection of people and technology.',
   body:     'CodeHe{R} LLC was founded with a passion to bridge a gap between economic stability and business growth. We are dedicated to providing business solutions that bring the needs of people and sustainable solutions together for powerful outcomes. Whether you are trying to solve for workforce shortages or you need to change your digital strategy, CodeHe{R} LLC is dedicated to solution driven results.',
   cta:      { label: 'Our Story', href: '/about' },
@@ -83,9 +83,9 @@ export const aboutTeaserContent = {
 // ── Project CTA ──────────────────────────────────────────────
 export const projectCtaContent = {
   eyebrow:  'Getting Started',
-  headline: 'How can we help?',
-  body:     'We\'re here to help you achieve your business goals. Tell us what you are interested in learning more about, and we\'ll follow up within 1–2 business days for a consultation.',
-  cta:      { label: 'Request a Quote', href: null }, // opens modal
+  headline: 'Your Business Solution Starts Here',
+  body:     'We\'re here to help you achieve your business goals. Tell us what you are interested in learning more about, and we\'ll follow up within 1 to 2 business days for a consultation.',
+  cta:      { label: 'Get Started', href: null }, // opens modal
 }
 
 // ── Footer ───────────────────────────────────────────────────

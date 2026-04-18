@@ -118,15 +118,13 @@ export default function WorkforceStats() {
           transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
           style={{ maxWidth: '40rem', marginBottom: '3.5rem' }}
         >
-          <p style={{ color: 'var(--color-primary)', fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '1rem' }}>
-            {c.eyebrow}
-          </p>
-          <h2 style={{ color: 'var(--color-text-light)', fontFamily: 'var(--font-heading)', fontSize: '2.5rem', fontWeight: 600, lineHeight: 1.2, marginBottom: '1.25rem' }}>
-            {c.headline}
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.5rem', fontWeight: 600, lineHeight: 1.2, marginBottom: '1.25rem' }}>
+            <span style={{ color: '#f5ecd7', textShadow: '2px 2px 0px #c9973a' }}>The</span>{' '}
+            <span style={{ color: '#c9973a', textShadow: '2px 2px 0px #1c1410' }}>Data</span>
+            <span className="block" style={{ fontSize: '1.35rem', fontWeight: 400, color: '#c8bfb4', textShadow: 'none', marginTop: '0.75rem' }}>
+              THAT DRIVES OUR PASSION
+            </span>
           </h2>
-          <p style={{ color: 'var(--color-text-faint)', fontSize: '1.1rem', lineHeight: 1.75 }}>
-            {c.subtext}
-          </p>
         </motion.div>
 
         {/* Grid */}

@@ -11,12 +11,22 @@ export default function SectionHeading({
   return (
     <div className={`max-w-2xl mb-12 ${alignClass} ${className}`}>
       {eyebrow && (
-        <p className={`
-          text-sm font-medium tracking-widest uppercase mb-3
-          ${light ? 'text-[var(--color-primary-light)]' : 'text-[var(--color-primary)]'}
-        `}>
-          {eyebrow}
-        </p>
+        <>
+          <p className={`
+            text-sm font-medium tracking-widest uppercase mb-2
+            ${light ? 'text-[var(--color-primary-light)]' : 'text-[var(--color-primary)]'}
+          `}>
+            {eyebrow}
+          </p>
+          <span style={{
+            display: 'block',
+            width: '2rem',
+            height: '3px',
+            background: '#B85C38',
+            marginBottom: '1rem',
+            ...(align === 'center' ? { marginLeft: 'auto', marginRight: 'auto' } : {}),
+          }} />
+        </>
       )}
       {headline && (
         <h2 className={`

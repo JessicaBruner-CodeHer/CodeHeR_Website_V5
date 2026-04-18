@@ -13,7 +13,7 @@ import portfolioRealestate  from '../images/portfolio-realestate.svg'
 export const workforcePageContent = {
   seo: {
     title:       'Business Consulting',
-    description: 'CodeHeR reviews your hiring practices end-to-end, identifies where qualified candidates are being filtered out, and delivers clear recommendations to close your talent gaps.',
+    description: 'CodeHe{R} LLC reviews your hiring practices end-to-end, identifies where qualified candidates are being filtered out, and delivers clear recommendations to close your talent gaps.',
   },
   hero: {
     eyebrow:  'Business Consulting',
@@ -21,9 +21,13 @@ export const workforcePageContent = {
     subtext:  '',
   },
   whatItIs: {
-    headline: 'That What',
+    headline: 'Our Approach',
     body: [
-      'We identify workforce gaps, review current processes, and build sustainable programs to bridge the gap between talent and opportunity.',
+      'The workforce is not missing. It is being overlooked.',
+      'At CodeHe{R} LLC, we help businesses identify where policies, practices, and processes may be limiting visibility into qualified talent.',
+      'We assess how your current approach to hiring is functioning in real time.',
+      'The result is a more aligned hiring process, stronger candidate consideration, and a workforce strategy that supports long-term performance and retention.',
+      'Because when barriers are reduced, better hiring decisions follow.',
     ],
   },
   process: {
@@ -31,10 +35,10 @@ export const workforcePageContent = {
     steps: [
       { title: 'Consultation',      body: 'We start with a focused call to identify your needs, challenges, and what success looks like for your business.' },
       { title: 'Strategy',          body: 'We build a tailored strategy that aligns directly with your business goals and the gaps you need to close.' },
-      { title: 'Process Review',    body: 'We go through your current processes and policies in detail — every document, every step, every friction point.' },
-      { title: 'Recommendations',   body: 'We walk you through clear, prioritized recommendations — specific, actionable, and grounded in what we found.' },
+      { title: 'Process Review',    body: 'We go through your current processes and policies in detail. Every document, every step, every friction point.' },
+      { title: 'Recommendations',   body: 'We walk you through clear, prioritized recommendations that are specific, actionable, and grounded in what we found.' },
       { title: 'Implementation',    body: 'We implement the agreed-upon changes with you and launch a sustainable program built to last.' },
-      { title: 'Ongoing Support',   body: 'We stay with you — making adjustments as needed and helping you track the KPIs and ROI that prove the program is working.' },
+      { title: 'Ongoing Support',   body: 'We stay with you, making adjustments as needed and helping you track the KPIs and ROI that prove the program is working.' },
     ],
   },
   whoItsFor: {
@@ -44,8 +48,8 @@ export const workforcePageContent = {
     ],
   },
   cta: {
-    headline: 'Let\'s Close the Gap Together',
-    label:    'Request a Consultation',
+    headline: 'Your Business Solution Starts Here',
+    label:    'Get Started',
   },
 }
 
@@ -79,7 +83,7 @@ export const workforceStatsContent = {
 export const digitalPageContent = {
   seo: {
     title:       'Digital Solutions',
-    description: 'Professional website development, rebuilds, hosting and support. CodeHeR builds digital presence that reflects the quality of your business.',
+    description: 'Professional website development, rebuilds, hosting and support. CodeHe{R} LLC builds digital presence that reflects the quality of your business.',
   },
   hero: {
     eyebrow:  'Digital Solutions',
@@ -90,7 +94,7 @@ export const digitalPageContent = {
     {
       icon:  'Code',
       title: 'New Website Builds',
-      body:  'From concept to launch — we design and build professional sites tailored to your business goals and audience.',
+      body:  'From concept to launch, we design and build professional sites tailored to your business goals and audience.',
     },
     {
       icon:  'RefreshCw',
@@ -100,7 +104,7 @@ export const digitalPageContent = {
     {
       icon:  'Server',
       title: 'Hosting & Support',
-      body:  'We handle the technical side — hosting, updates, security, and ongoing support — so you can focus on running your business.',
+      body:  'We handle the technical side: hosting, updates, security, and ongoing support, so you can focus on running your business.',
     },
   ],
   portfolio: {
@@ -116,7 +120,7 @@ export const digitalPageContent = {
     ],
   },
   cta: {
-    headline: 'Ready to build something great?',
-    label:    'Request a Quote',
+    headline: 'Your Business Solution Starts Here',
+    label:    'Get Started',
   },
 }

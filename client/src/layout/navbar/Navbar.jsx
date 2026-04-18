@@ -30,15 +30,6 @@ export default function Navbar({ onQuoteClick }) {
     `}>
       <div className="site-container h-full flex items-center justify-between gap-6">
 
-        {/* Logo
-        <Link
-          to="/"
-          className="font-heading text-2xl font-semibold text-[var(--color-text-strong)] shrink-0"
-          aria-label="CodeHeR home"
-        >
-          CodeHe<span className="text-[var(--color-primary)]">&#123;R&#125;</span> LLC
-        </Link> */}
-
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
           {c.links.map((link) => (
@@ -49,7 +40,7 @@ export default function Navbar({ onQuoteClick }) {
                 px-5 py-2 rounded-[var(--radius-md)] text-base font-medium
                 transition-colors duration-[var(--transition-fast)]
                 ${pathname === link.href
-                  ? 'text-[var(--color-primary)] bg-[var(--color-primary)]/8'
+                  ? 'text-[var(--color-primary)] bg-[var(--color-primary)]/8 border-b-2 border-b-[#B85C38]'
                   : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-body)] hover:bg-[var(--color-surface-muted)]'
                 }
               `}
@@ -110,7 +101,7 @@ export default function Navbar({ onQuoteClick }) {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-3 mt-1 border-t border-[var(--color-border-light)]">
+            <div className="pt-3 mt-1" style={{ borderTop: '1px solid rgba(184,92,56,0.3)' }}>
               <Button variant="primary" size="md" onClick={onQuoteClick} className="w-full">
                 {c.ctaLabel}
               </Button>

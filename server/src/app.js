@@ -3,6 +3,7 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
 import quoteRoutes from "./routes/quoteRoutes.js";
+import badgeRoutes from "./routes/badgeRoutes.js";
 import env from "./config/env.js";
 
 const app = express();
@@ -45,6 +46,7 @@ app.get("/api/health", (req, res) => {
 });
 
 app.use("/api/quotes", quoteRoutes);
+app.use("/api/badge-requests", badgeRoutes);
 
 // ── BLS Workforce Stats ──────────────────────────────────────
 const BLS_SERIES = [

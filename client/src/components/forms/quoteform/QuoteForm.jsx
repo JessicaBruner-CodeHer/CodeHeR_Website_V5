@@ -100,7 +100,7 @@ export default function QuoteForm({ onSuccess }) {
               letterSpacing: '0.05em',
               marginBottom: '1.25rem',
             }}>
-              CodeHe<span style={{ color: 'var(--color-primary)' }}>&#123;R&#125;</span>{' '}
+              CodeHe<span style={{ color: '#B85C38' }}>&#123;R&#125;</span>{' '}
               <span style={{ color: 'rgba(245,236,215,0.5)', fontSize: '0.7rem' }}>LLC</span>
             </p>
             {/* Eyebrow */}

@@ -8,7 +8,7 @@ import ProjectCta     from '@/sections/projectcta/ProjectCta'
 export default function Home({ onQuoteClick }) {
   useSeo({
     title:       'Home',
-    description: 'CodeHeR LLC — Workforce consulting and professional web development for growing businesses.',
+    description: 'CodeHeR LLC: Workforce consulting and professional web development for growing businesses.',
   })
 
   return (

@@ -18,17 +18,18 @@ export default function Mission() {
 
       <div className="site-container relative z-10">
 
-        {/* Eyebrow */}
-        <motion.p
+        {/* Title */}
+        <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-sm font-medium tracking-widest uppercase text-[var(--color-primary)] text-center"
-          style={{ marginBottom: '1.5rem' }}
+          className="font-heading text-4xl md:text-5xl font-semibold leading-tight"
+          style={{ marginBottom: '2.5rem' }}
         >
-          {c.eyebrow}
-        </motion.p>
+          <span style={{ color: '#f5ecd7', textShadow: '2px 2px 0px #c9973a' }}>Our</span>{' '}
+          <span style={{ color: '#c9973a', textShadow: '2px 2px 0px #1c1410' }}>Promise</span>
+        </motion.h2>
 
         {/* Bold statement */}
         <motion.blockquote
@@ -47,7 +48,7 @@ export default function Mission() {
         </motion.blockquote>
 
         {/* Divider */}
-        <div style={{ height: '1px', background: 'rgba(201,151,58,0.3)', marginBottom: '3.5rem' }} />
+        <div style={{ height: '1px', background: 'rgba(184,92,56,0.4)', marginBottom: '3.5rem' }} />
 
         {/* Pillars */}
         <div
@@ -65,12 +66,10 @@ export default function Mission() {
                 transition={{ duration: 0.5, delay: 0.15 + i * 0.1 }}
                 style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}
               >
-                <div className="
-                  w-10 h-10 rounded-[var(--radius-md)]
-                  bg-[var(--color-primary)]/15
-                  flex items-center justify-center
-                  text-[var(--color-primary)]
-                ">
+                <div
+                  className="hex-icon w-12 h-12 bg-[var(--color-primary)]/15 flex items-center justify-center text-[var(--color-primary)]"
+                  style={{ filter: 'drop-shadow(4px 4px 0px #B85C38)' }}
+                >
                   {Icon && <Icon size={18} strokeWidth={1.5} />}
                 </div>
 

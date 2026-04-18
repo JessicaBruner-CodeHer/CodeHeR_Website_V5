@@ -43,7 +43,7 @@ export default function Hero({ onQuoteClick }) {
 
         <div className="relative z-10 max-w-xl">
 
-          {/* Logo — mobile only (shown when left panel is hidden) */}
+          {/* Logo — mobile only */}
           <motion.div
             {...fadeUp(0.05)}
             className="lg:hidden mb-8 flex justify-center"
@@ -55,37 +55,63 @@ export default function Hero({ onQuoteClick }) {
             />
           </motion.div>
 
-          {/* Eyebrow */}
-          <motion.p
-            {...fadeUp(0.1)}
-            className="text-sm font-medium tracking-widest uppercase mb-6 text-[var(--color-primary)]"
-          >
-            {c.eyebrow}
-          </motion.p>
-
           {/* Headline */}
           <motion.h1
-            {...fadeUp(0.2)}
+            {...fadeUp(0.1)}
             className="
               font-heading text-5xl sm:text-6xl lg:text-6xl
-              font-semibold leading-[1.08] text-[var(--color-text-strong)]
-              mb-6 whitespace-pre-line
+              font-semibold leading-[1.3] text-[var(--color-text-strong)]
+              mb-6
             "
           >
-            {c.headline}
+            {/* Line 1: Your Business. */}
+            <span className="block mb-2">
+              <span style={{
+                color:      '#1c1410',
+                textShadow: '2px 2px 0px #c9973a',
+                marginRight: '12px',
+              }}>
+                Your
+              </span>
+              <span style={{
+                color:      '#c9973a',
+                textShadow: '2px 2px 0px #1c1410',
+              }}>
+                Business
+              </span>
+              <span style={{ color: 'var(--color-text-strong)' }}>.</span>
+            </span>
+
+            {/* Line 2: Our Solutions. */}
+            <span className="block">
+              <span style={{
+                color:      '#1c1410',
+                textShadow: '2px 2px 0px #c9973a',
+                marginRight: '12px',
+              }}>
+                Our
+              </span>
+              <span style={{
+                color:      '#c9973a',
+                textShadow: '2px 2px 0px #1c1410',
+              }}>
+                Solutions
+              </span>
+              <span style={{ color: 'var(--color-text-strong)' }}>.</span>
+            </span>
           </motion.h1>
 
           {/* Subheadline */}
           <motion.p
-            {...fadeUp(0.3)}
+            {...fadeUp(0.2)}
             className="text-lg text-[var(--color-text-muted)] leading-relaxed mb-10"
           >
             {c.subheadline}
           </motion.p>
 
-          {/* CTAs */}
+          {/* CTA */}
           <motion.div
-            {...fadeUp(0.4)}
+            {...fadeUp(0.3)}
             className="flex flex-wrap gap-4"
           >
             <Button variant="primary" size="lg" onClick={onQuoteClick}>

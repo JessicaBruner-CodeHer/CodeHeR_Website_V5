@@ -25,15 +25,13 @@ export default function DigitalService({ onQuoteClick }) {
             transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-2xl"
           >
-            <p style={{ color: '#c9973a', marginBottom: '1rem' }} className="text-sm font-medium tracking-widest uppercase">
-              {c.hero.eyebrow}
-            </p>
-            <h1 style={{ color: '#f5ecd7', marginBottom: '1.5rem' }} className="font-heading text-5xl lg:text-6xl font-semibold leading-tight">
-              {c.hero.headline}
+            <h1 className="font-heading font-semibold leading-tight" style={{ marginBottom: '1.5rem' }}>
+              <span className="text-5xl lg:text-6xl" style={{ color: '#f5ecd7', textShadow: '2px 2px 0px #c9973a' }}>The</span>{' '}
+              <span className="text-5xl lg:text-6xl" style={{ color: '#c9973a', textShadow: '2px 2px 0px #1c1410' }}>Intersection</span>
+              <span className="block" style={{ fontSize: '1.35rem', fontWeight: 400, color: '#c8bfb4', textShadow: 'none', marginTop: '0.75rem' }}>
+                OF TECHNOLOGY
+              </span>
             </h1>
-            <p style={{ color: '#c8bfb4', fontSize: '1.25rem', lineHeight: '1.75' }}>
-              {c.hero.subtext}
-            </p>
           </motion.div>
         </div>
       </section>
@@ -43,7 +41,10 @@ export default function DigitalService({ onQuoteClick }) {
         style={{ paddingTop: '7rem', paddingBottom: '7rem', background: 'var(--color-surface-white)', borderTop: '1px solid var(--color-border-light)' }}
       >
         <div className="site-container">
-          <SectionHeading eyebrow="What we offer" headline="Services" />
+          <h2 className="font-heading text-4xl md:text-5xl font-semibold leading-tight mb-12">
+            <span style={{ color: '#1c1410', textShadow: '2px 2px 0px #c9973a' }}>Our</span>{' '}
+            <span style={{ color: '#c9973a', textShadow: '2px 2px 0px #1c1410' }}>Services</span>
+          </h2>
           <div style={{ marginTop: '4rem', gap: '2.5rem' }} className="grid grid-cols-1 md:grid-cols-3">
             {c.services.map((service, i) => {
               const Icon = ICON_MAP[service.icon]
@@ -54,7 +55,7 @@ export default function DigitalService({ onQuoteClick }) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: '-60px' }}
                   transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1], delay: i * 0.12 }}
-                  style={{ padding: '3rem', gap: '2rem', display: 'flex', flexDirection: 'column' }}
+                  style={{ padding: '3rem', gap: '2rem', display: 'flex', flexDirection: 'column', borderLeft: '4px solid #B85C38' }}
                   className="
                     group
                     bg-[var(--color-surface-cream)]
@@ -67,7 +68,7 @@ export default function DigitalService({ onQuoteClick }) {
                     transition-all duration-[var(--transition-base)]
                   "
                 >
-                  <div className="w-14 h-14 rounded-[var(--radius-md)] bg-[var(--color-primary)]/10 flex items-center justify-center text-[var(--color-primary)] shrink-0">
+                  <div className="hex-icon w-16 h-16 bg-[var(--color-primary)]/15 flex items-center justify-center text-[var(--color-primary)] shrink-0" style={{ filter: 'drop-shadow(4px 4px 0px #B85C38)' }}>
                     {Icon && <Icon size={26} strokeWidth={1.5} />}
                   </div>
                   <h3 className="font-heading text-2xl font-semibold text-[var(--color-text-strong)] leading-snug">
@@ -88,11 +89,10 @@ export default function DigitalService({ onQuoteClick }) {
         style={{ paddingTop: '7rem', paddingBottom: '7rem', background: 'var(--color-surface-cream)', borderTop: '1px solid var(--color-border-light)' }}
       >
         <div className="site-container">
-          <SectionHeading
-            eyebrow="Portfolio"
-            headline={c.portfolio.headline}
-            subtext={c.portfolio.subtext}
-          />
+          <h2 className="font-heading text-4xl md:text-5xl font-semibold leading-tight mb-12">
+            <span style={{ color: '#1c1410', textShadow: '2px 2px 0px #c9973a' }}>Our</span>{' '}
+            <span style={{ color: '#c9973a', textShadow: '2px 2px 0px #1c1410' }}>Examples</span>
+          </h2>
           <div style={{ marginTop: '3.5rem', gap: '2.5rem' }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {c.portfolio.projects.map((project, i) => (
               <motion.div

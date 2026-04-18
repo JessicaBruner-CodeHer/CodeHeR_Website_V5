@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion'
 import { aboutTeaserContent as c } from '@/assets/constants/siteContent'
-import SectionHeading from '@/ui/sectionheading/SectionHeading'
 import Button from '@/ui/button/Button'
 import bridgeImage from '../../assets/images/codeher_bridge_refined.svg'
+
+const R = <span style={{ color: '#B85C38' }}>&#123;R&#125;</span>
 
 export default function AboutTeaser() {
   return (
@@ -22,16 +23,24 @@ export default function AboutTeaser() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-          <SectionHeading
-            eyebrow={c.eyebrow}
-            headline={c.headline}
-            subtext={c.body}
-          />
-          <div style={{ marginTop: '2.5rem' }}>
-            <Button variant="outline" size="md" href={c.cta.href}>
-              {c.cta.label}
-            </Button>
-          </div>
+          {/* Headline */}
+          <h2 className="font-heading font-semibold leading-tight mb-8">
+            <span className="text-4xl md:text-5xl" style={{ color: '#1c1410', textShadow: '2px 2px 0px #c9973a' }}>Our</span>{' '}
+            <span className="text-4xl md:text-5xl" style={{ color: '#c9973a', textShadow: '2px 2px 0px #1c1410' }}>Mission</span>
+            <span className="block" style={{ fontSize: '1.35rem', fontWeight: 400, color: '#6f6256', textShadow: 'none', marginTop: '0.75rem', marginBottom: '2rem' }}>
+              OF PEOPLE AND TECHNOLOGY
+            </span>
+          </h2>
+
+          {/* Body — CodeHe{R} LLC styled inline */}
+          <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
+            CodeHe{R} LLC was founded with a passion to bridge a gap between economic stability
+            and business growth. We are dedicated to providing business solutions that bring the
+            needs of people and sustainable solutions together for powerful outcomes. Whether you
+            are trying to solve for workforce shortages or you need to change your digital
+            strategy, CodeHe{R} LLC is dedicated to solution driven results.
+          </p>
+
         </motion.div>
       </div>
 
@@ -42,7 +51,7 @@ export default function AboutTeaser() {
       >
         <motion.img
           src={bridgeImage}
-          alt="The bridge between people and technology — CodeHeR LLC"
+          alt="The bridge between people and technology, CodeHeR LLC"
           initial={{ opacity: 0, scale: 0.97 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}

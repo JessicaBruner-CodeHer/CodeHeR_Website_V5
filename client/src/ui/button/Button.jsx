@@ -1,19 +1,17 @@
 import { Link } from 'react-router-dom'
 
 /**
- * Button / CTA component
  * variant: 'primary' | 'secondary' | 'ghost' | 'outline'
  * size:    'sm' | 'md' | 'lg'
- * as:      'button' | 'link' (internal) | 'a' (external)
  */
 export default function Button({
   children,
-  variant = 'primary',
-  size    = 'md',
-  href    = null,
-  onClick = null,
+  variant  = 'primary',
+  size     = 'md',
+  href     = null,
+  onClick  = null,
   disabled = false,
-  type    = 'button',
+  type     = 'button',
   className = '',
   ...props
 }) {
@@ -33,14 +31,14 @@ export default function Button({
   }
 
   const variants = {
-    primary:  `
+    primary: `
       bg-[var(--color-primary)] text-[var(--color-bg-main)]
       hover:bg-[var(--color-primary-light)]
       focus-visible:outline-[var(--color-primary)]
-      shadow-[var(--shadow-sm)]
+      shadow-[0_4px_0px_#B85C38]
     `,
     secondary: `
-      bg-[var(--color-accent)] text-white
+      bg-[var(--color-accent)] text-[var(--color-bg-main)]
       hover:bg-[var(--color-accent-light)]
       focus-visible:outline-[var(--color-accent)]
       shadow-[var(--shadow-sm)]
@@ -83,13 +81,7 @@ export default function Button({
   }
 
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-      className={classes}
-      {...props}
-    >
+    <button type={type} onClick={onClick} disabled={disabled} className={classes} {...props}>
       {children}
     </button>
   )
