@@ -112,7 +112,7 @@ export const quoteFormContent = {
   subtitle:     "Tell us about your goals and we'll reach out within one business day.",
   successTitle: 'We\'ve got your request!',
   successBody:  'Someone from our team will reach out within 1 business day to discuss next steps. Keep an eye on your inbox.',
-  errorMessage: 'Something went wrong on our end. Please try again or email us directly at hello@codeher.io.',
+  errorMessage: 'Something went wrong on our end. Please try again or email us directly at info@codeherllc.com.',
   fields: {
     name:     { label: 'Full Name',     placeholder: 'Jane Smith' },
     email:    { label: 'Email Address', placeholder: 'jane@company.com' },
